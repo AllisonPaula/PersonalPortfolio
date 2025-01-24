@@ -1,0 +1,30 @@
+<header class="flex justify-between items-center py-4 px-8 bg-white shadow-md">
+  <!-- Logo -->
+  <div class="text-xl font-bold">ALLISON</div>
+
+  <!-- Menú hamburguesa (visible en dispositivos móviles) -->
+  <button
+    class="md:hidden text-gray-700 focus:outline-none"
+    id="menu-toggle"
+    onclick="toggleMenu()"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+    </svg>
+  </button>
+
+  <!-- Menú de navegación (escondido por defecto en móviles) -->
+  <nav
+    id="menu"
+    class="hidden md:flex md:space-x-8 absolute md:static top-16 left-0 bg-white w-full md:w-auto md:bg-transparent shadow-md md:shadow-none z-10"
+  >
+    <a href="#" class="block text-gray-700 hover:text-black py-2 px-4 md:p-0 transition">Sobre Mi</a>
+    <a href="#" class="block text-gray-700 hover:text-black py-2 px-4 md:p-0 transition">Proyectos</a>
+    <a href="#" class="block text-gray-700 hover:text-black py-2 px-4 md:p-0 transition">Contacto</a>
+  </nav>
+
+  <!-- Botón de Contratación -->
+  <button class="hidden md:block bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition">
+    Contáctame
+  </button>
+</header>
