@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './menu-bar.component.html',
-  styleUrl: './menu-bar.component.css'
+  styleUrls: ['./menu-bar.component.css']  // Asegúrate de usar 'styleUrls' en lugar de 'styleUrl'
 })
 export class MenuBarComponent {
   isMenuHidden: boolean = true;

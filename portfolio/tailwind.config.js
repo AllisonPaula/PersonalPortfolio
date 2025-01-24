@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         bl: {
           '50': '#1D1616',
+          '100': '#000000',
         },
         re: {
           '50': '#8E1616',
@@ -19,11 +20,9 @@ module.exports = {
         wh: {
           '50': 'ffffff',
           '100': 'EEEEEE',
+          '200': 'F7F7F7',
         },
-        wh: {
-          '50': 'ffffff',
-          '100': 'EEEEEE',
-        },
+
       },
     },
   },
