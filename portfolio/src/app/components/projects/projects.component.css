@@ -1,24 +1,19 @@
-/* Estilos generales */
+/* General Style */
 section {
     transition: background-color 0.5s ease;
   }
   
-  h2 {
-    color: #333;
-  }
-  
-  /* Tarjetas del Carrusel */
+  /* Carrousel Cards */
   .carousel-item {
     transition: all 0.3s ease-in-out;
   }
  
-  /* Imagen de los proyectos */
+  /* Projects Images */
   .carousel-container .carousel-item img {
     transition: transform 0.5s ease, opacity 0.5s ease;
   }
   
-  
-  /* Botones de Navegación */
+  /* Navegation Buttons */
   button {
     transition: all 0.3s ease;
   }
@@ -28,8 +23,7 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
   
-  /* Botones con iconos */
+  /* Icons Buttons */
   .material-icons {
     font-size: 24px;
   }
-  
