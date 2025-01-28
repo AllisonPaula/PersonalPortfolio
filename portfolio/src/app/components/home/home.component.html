@@ -1,46 +1,52 @@
-<body class="bg-slate-50 text-bl-50 font-sans">
+<body class="bg-slate-100 text-black font-sans dark:bg-slate-900 dark:text-white transition-all duration-300">
     <section class="min-h-full py-10 flex items-center justify-center">
-        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center  overflow-hidden">
-            
-            <!-- Text Column -->
-            <div class="p-8 text-center lg:text-left">
-                <h1 class="text-3xl md:text-4xl font-bold mb-4">
-                    {{hi}} <span class="text-re-50">{{me}}</span>
-                </h1>
-                <p class="text-lg mb-6">{{description}}</p>
-                <p class="text-sm mb-6">{{ab}} </p>
-                <button class="bg-re-50 text-white px-6 py-3 rounded-full hover:bg-re-200 transition" (click)="goEmail()">
-                    Contáctame
-                </button>
-
-                <div class="flex justify-center lg:justify-start mt-6 space-x-4">
-                    <a href="{{email}}" class="p-3 bg-wh-100 rounded-full hover:bg-re-100 transition">
-                        <img src="/assets/icons/email.svg" alt="Email" class="w-5 h-5">
-                      </a>
-                      <!-- GitHub Link -->
-                      <a href="{{github}}" class="p-3 bg-wh-100 rounded-full hover:bg-bl-200 transition">
-                        <img src="/assets/icons/github.svg" alt="Github" class="w-5 h-5">
-                      </a>
-                      <!-- Instagram Link -->
-                      <a href="{{instagram}}"
-                        class="p-3 bg-wh-100 rounded-full hover:bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCB045] transition">
-                        <img src="/assets/icons/instagram.svg" alt="Instagram" class="w-5 h-5">
-                      </a>
-                      <!-- LinkedIn Link -->
-                      <a href="{{linkedin}}" class="p-3 bg-wh-100 rounded-full hover:bg-[#0077B5] transition">
-                        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5">
-                      </a>
-                </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="flex justify-center items-center">
-                <div class="relative">
-                    <div class="absolute inset-0 w-70 h-70 border-4 border-dotted border-re-50 rounded-full spin-circle"></div>
-                    <img src="/assets/images/yo.png" alt="Profile Picture"
-                        class="relative w-80 h-80 object-cover" />
-                </div>
-            </div>
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center overflow-hidden">
+        
+        <!-- Text Column -->
+        <div class="p-8 text-center lg:text-left">
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">
+            {{hi}} <span class="text-red-600 dark:text-red-400 transition-colors">{{me}}</span>
+          </h1>
+          <p class="text-lg mb-6 transition-colors">{{description}}</p>
+          <p class="text-sm mb-6 transition-colors">{{ab}}</p>
+          <button
+            class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-400 transition-colors duration-300"
+            (click)="goEmail()">
+            Contáctame
+          </button>
+  
+          <div class="flex justify-center lg:justify-start mt-6 space-x-4">
+            <!-- Email Link -->
+            <a href="{{email}}" 
+               class="p-3 bg-slate-200 dark:bg-slate-700 rounded-full hover:bg-red-500 dark:hover:bg-red-500 transition-colors duration-300">
+              <img src="/assets/icons/email.svg" alt="Email" class="w-5 h-5 dark:invert">
+            </a>
+            <!-- GitHub Link -->
+            <a href="{{github}}" 
+               class="p-3 bg-slate-200 dark:bg-slate-700 rounded-full hover:bg-gray-600 dark:hover:bg-black transition-colors duration-300">
+              <img src="/assets/icons/github.svg" alt="Github" class="w-5 h-5 dark:invert">
+            </a>
+            <!-- Instagram Link -->
+            <a href="{{instagram}}"
+               class="p-3 bg-slate-200 dark:bg-slate-700 rounded-full hover:bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCB045] transition-colors duration-300">
+              <img src="/assets/icons/instagram.svg" alt="Instagram" class="w-5 h-5 dark:invert">
+            </a>
+            <!-- LinkedIn Link -->
+            <a href="{{linkedin}}" 
+               class="p-3 bg-slate-200 dark:bg-slate-700 rounded-full hover:bg-[#0077B5] dark:hover:bg-blue-500 transition-colors duration-300">
+              <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 dark:invert">
+            </a>
+          </div>
         </div>
+  
+        <!-- Image Column -->
+        <div class="flex justify-center items-center">
+          <div class="relative">
+            <div class="absolute inset-0 w-70 h-70 border-4 border-dotted border-red-600 dark:border-red-400 rounded-full spin-circle transition-colors"></div>
+            <img src="/assets/images/yo.png" alt="Profile Picture"
+                 class="relative w-80 h-80 object-cover">
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>

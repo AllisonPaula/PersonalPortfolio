@@ -17,7 +17,14 @@
   <a routerLink="/footer" pageScroll href="#footer" class="block text-gray-700 hover:text-re-50 hover:font-semibold py-2 px-4 md:p-0 transition">Contacto</a>
   </nav>
 
-  <button class="hidden md:block bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition" (click)="goEmail()">
-    Contáctame
-  </button>
+  <button 
+  class="hidden md:block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-3 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300"
+  (click)="toggleDarkMode()">
+  <i 
+    class="fas" 
+    [class.fa-moon]="!isDarkMode" 
+    [class.fa-sun]="isDarkMode">
+  </i>
+</button>
+
 </header>

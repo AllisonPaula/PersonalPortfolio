@@ -12,7 +12,7 @@ export class MyProjectsComponent {
   //Text
   hi = 'Hola, soy';
   me = ' ALLISON PAULA';
-  description = 'Desarrolladora de Software con pasión por el diseño y la tecnología.';
+  description = 'Desarrolladora de Software con pasión por la tecnología.';
   ab = ' Me caracterizo por ser una persona organizada y productiva. La responsabilidad y la disciplina son pilares en mi trabajo. Busco oportunidades para aplicar y ampliar mis conocimientos.';
 
   // External Links
